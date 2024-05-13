@@ -1,0 +1,8 @@
+services:
+  trust4ai-bias-evaluator-ds:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    ports:
+      - "8001:8001"
