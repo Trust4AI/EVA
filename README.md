@@ -1,6 +1,6 @@
-## Trust4AI Component Template
+## EVA: Response Evaluator
 
-This project serves as a template for the creation of components for testing LLMs in the context of the Trust4AI project. Each component will provide a REST API, a Postman collection, and the docker files required for deployment. 
+EVA is a tool to evaluate and categorize text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing.
 
 ### Usage
 
@@ -22,7 +22,7 @@ This repository is structured as follows:
 -  `Dockerfile`: This file is a script containing a series of instructions and commands used to build a Docker image.
 -  `docker-compose.yml`: This YAML file allows you to configure application services, networks, and volumes in a single file, facilitating the orchestration of containers.
 
-## License and funding
+### License and funding
 
 [Trust4AI](https://trust4ai.github.io/trust4ai/) is licensed under the terms of the GPL-3.0 license.
 
