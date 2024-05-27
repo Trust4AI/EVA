@@ -1,6 +1,6 @@
 ## EVA: Response Evaluator
 
-EVA classifies text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing.
+EVA classifies text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing. Integration options include a Docker image launching a REST API with interactive documentation, facilitating its use and integration. POET is part of the [Trust4AI](https://trust4ai.github.io/trust4ai/) research project.
 
 ### Usage
 
