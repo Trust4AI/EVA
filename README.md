@@ -1,6 +1,6 @@
 ## EVA: Response Evaluator
 
-EVA is a tool to evaluate and categorize text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing.
+EVA classifies text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing.
 
 ### Usage
 
