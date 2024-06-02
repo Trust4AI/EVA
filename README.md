@@ -2,13 +2,6 @@
 
 EVA classifies text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing. Integration options include a Docker image launching a REST API with interactive documentation, facilitating its use and integration. POET is part of the [Trust4AI](https://trust4ai.github.io/trust4ai/) research project.
 
-### Usage
-
-Provide a description of the component, including several use examples and, if possible, a video demo.
-
-### Deployment
-
-Provide a description of the required steps for deploying the component.
 
 ### Repository structure
 
@@ -22,7 +15,7 @@ This repository is structured as follows:
 -  `docker/Dockerfile`: This file is a script containing a series of instructions and commands used to build a Docker image.
 -  `docker/docker-compose.yml`: This YAML file allows you to configure application services, networks, and volumes in a single file, facilitating the orchestration of containers.
 
-## Local
+## Deployment
 ### Installation
 If you haven't downloaded the project yet, first clone the repository:
 ```bash
@@ -61,7 +54,7 @@ To stop the container, execute the following command:
 docker-compose down
 ```
 
-## API
+## Usage
 To view the API documentation, access the following URL:
 ```
 http://localhost:8000/api/v1/docs
@@ -71,7 +64,7 @@ Or
 http://localhost:8000/api/v1/redoc
 ```
 
-### Demo 
+### Example
 Now, I will demonstrate how to use the evaluator with the following example. We will use an input obtained from the [generator](https://github.com/Trust4AI/trust4ai-bias-generator-ds):
 ````json
   {
