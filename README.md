@@ -1,6 +1,6 @@
-## Trust4AI Component Template
+## EVA: Response Evaluator
 
-This project serves as a template for the creation of components for testing LLMs in the context of the Trust4AI project. Each component will provide a REST API, a Postman collection, and the docker files required for deployment. 
+EVA classifies text inputs as affirmative or negative responses, explanations, enumerated lists, and more. Its primary application is the assessment of large language model (LLM) responses during testing. Integration options include a Docker image launching a REST API with interactive documentation, facilitating its use and integration. POET is part of the [Trust4AI](https://trust4ai.github.io/trust4ai/) research project.
 
 ### Usage
 
@@ -121,7 +121,7 @@ The generated response is:
 "pass"
 ```
 
-## License and funding
+### License and funding
 
 [Trust4AI](https://trust4ai.github.io/trust4ai/) is licensed under the terms of the GPL-3.0 license.
 
