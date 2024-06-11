@@ -109,7 +109,7 @@ This repository is structured as follows:
 If you haven't downloaded the project yet, first clone the repository:
 
 ```bash
-git clone https://github.com/Trust4AI/trust4ai-bias-evaluator-ds.git
+git clone https://github.com/Trust4AI/EVA.git
 ```
 
 To install the project, run the following command:
