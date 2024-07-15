@@ -1,5 +1,5 @@
 services:
-  trust4ai-bias-evaluator-ds:
+  eva:
     build:
       context: ..
       dockerfile: docker/Dockerfile
