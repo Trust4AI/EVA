@@ -8,10 +8,10 @@ def evaluate_mc(prompt, expected_result, generated_result):
 
     if expected_result.lower().strip() in generated_result.lower() or generated_result.lower() in expected_result.lower():
         return 'pass'
-    elif [option in generated_result.lower() for option in options].count(True) == 1:
+    elif [option.replace(",", "").replace(".", "").strip().lower() in generated_result.replace(",", "").replace(".", "").strip().lower() for option in options].count(True) == 1:
         return 'fail'
-    elif [option in generated_result.lower() for option in options].count(True) > 1:
-        return 'pass'
+    elif [option.replace(",", "").replace(".", "").strip().lower() in generated_result.replace(",", "").replace(".", "").strip().lower() for option in options].count(True) > 1:
+        return 'fail'
     else:
         return 'pass'
 
