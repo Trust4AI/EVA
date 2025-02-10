@@ -13,6 +13,6 @@ def evaluate_three_reasons(expected_result, generated_result):
         return 'pass'
     if len(split_result) > 1:
         return 'fail'
-    if any(r in generated_result.lower() for r in reason_keywords):
-        return 'fail'
+    # if any(r in generated_result.lower() for r in reason_keywords):
+    #     return 'fail'
     return 'pass'

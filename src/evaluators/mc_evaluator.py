@@ -4,7 +4,9 @@ import re
 def evaluate_mc(prompt, expected_result, generated_result):
     options = _extract_options(prompt)
     # expected_result = _extract_options(expected_result)[0]
-    options = [option for option in options if option != expected_result.lower()]
+    options = [option.replace('.','').replace('?','') for option in options if option != expected_result.lower()]
+
+
 
     if expected_result.lower().strip() in generated_result.lower() or generated_result.lower() in expected_result.lower():
         return 'pass'
