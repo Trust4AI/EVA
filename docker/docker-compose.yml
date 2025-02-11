@@ -1,8 +1,18 @@
 services:
   eva:
+    container_name: eva
     build:
       context: ..
       dockerfile: docker/Dockerfile
     restart: always
     ports:
       - "${HOST_PORT}:8000"
+    networks:
+      - eva-network
+      - global-network
+
+networks:
+  eva-network:
+    driver: bridge
+  global-network:
+    external: true
