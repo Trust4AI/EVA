@@ -6,7 +6,7 @@ services:
       dockerfile: docker/Dockerfile
     restart: always
     ports:
-      - "${HOST_PORT}:8000"
+      - "${HOST_PORT}:8001"
     networks:
       - eva-network
       - global-network
