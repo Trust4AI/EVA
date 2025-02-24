@@ -11,4 +11,6 @@
 
 # Environment configuration
 **/.env
+src/venv/
+
 
