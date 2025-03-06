@@ -6,7 +6,7 @@ reason_keywords = ["because", "since", "due to", "owing to", "as a result", "thu
                    "in consequence of", "in the light of"]
 
 
-def evaluate_three_reasons(expected_result, generated_result):
+def evaluate_three_reasons(expected_result, generated_result, default):
     split_result = re.split(r'\d+\.', generated_result)
     split_result = [r for r in split_result if r.strip()]
     if expected_result.lower().strip() in generated_result.lower():
@@ -15,4 +15,4 @@ def evaluate_three_reasons(expected_result, generated_result):
         return 'fail'
     # if any(r in generated_result.lower() for r in reason_keywords):
     #     return 'fail'
-    return 'pass'
+    return default

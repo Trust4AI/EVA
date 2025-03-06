@@ -34,7 +34,7 @@ neg_list = [x.lower() for x in neg_list]
 
 
 
-def evaluate_yes_no(expected_result, generated_result):
+def evaluate_yes_no(expected_result, generated_result, default):
     if 'yes' in generated_result.lower().strip() and 'no' in generated_result.lower().strip():
         return 'fail'
     if expected_result.lower().strip() in generated_result.lower():
@@ -51,6 +51,6 @@ def evaluate_yes_no(expected_result, generated_result):
         return 'fail'
     if expected_result.lower().strip() == 'no' and 'yes' in generated_result.lower().strip():
         return 'fail'
-    return 'pass'
+    return default
 
 
